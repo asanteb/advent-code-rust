@@ -5,7 +5,6 @@ use std::path::Path;
 fn main() {
     let filename = String::from("src/day1-input.txt");
     if let Ok(lines) = read_input(filename) {
-        // let result = algo(lines);
         println!("{}", algo(lines));
     }
 }

@@ -11,19 +11,10 @@ fn main() {
 }
 
 fn algo(input_vect: Vec<String>) -> String {
-    let mut result = String::from("");
-    for (i, line1) in input_vect.iter().enumerate() {
-        for (j, line2) in input_vect.iter().enumerate() {
-            if i == j {
-                continue
-            }
-            let num1: i32 = line1.parse().unwrap();
-            let num2: i32 = line2.parse().unwrap();
-            let total = num1 + num2;
-            if total == 2020 {
-                result = (num1 * num2).to_string();
-            }
-        }
+    let result = String::from("hello");
+    
+    for line in input_vect {
+        println!("{}", line)
     }
     result
 }
